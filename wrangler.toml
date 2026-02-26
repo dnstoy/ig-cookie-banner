@@ -9,7 +9,7 @@ RECORD_RETENTION_DAYS = "1095"
 [[d1_databases]]
 binding = "DB"
 database_name = "ig-consent-records"
-database_id = "local-dev-placeholder"
+database_id = "e236d374-7432-4823-8ade-3b2fcdfd3dd3"
 migrations_dir = "migrations"
 
 [triggers]
