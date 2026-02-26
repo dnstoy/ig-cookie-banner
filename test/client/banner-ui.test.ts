@@ -55,6 +55,8 @@ function makeBootstrap(
     gpcState: "not-detected",
     geo: { country: "DE" },
     config: makeConfig(),
+    locale: makeLocale(),
+    localeCode: "en",
     ...overrides,
   };
 }
@@ -105,7 +107,7 @@ function makeLocale(): LocaleStrings {
       marketing: { name: "Marketing", description: "Ads." },
       functional: { name: "Functional", description: "Features." },
     },
-    common: { privacyPolicy: "Privacy", poweredBy: "Consent" },
+    common: { privacyPolicy: "Privacy", poweredBy: "Consent", alwaysOn: "Always on", cookiePreferences: "Cookie preferences" },
   };
 }
 

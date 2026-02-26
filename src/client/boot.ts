@@ -99,8 +99,8 @@ function readBootstrap(): BootstrapPayload | null {
   }
 }
 
-function readLocale(_bootstrap: BootstrapPayload): LocaleStrings {
-  // Phase 1: use the default English locale from locales/en.json.
-  // Phase 2: locale will come from the bootstrap payload.
-  return defaultLocale;
+function readLocale(bootstrap: BootstrapPayload): LocaleStrings {
+  // Phase 2: locale comes from the bootstrap payload (resolved by the Worker).
+  // Fall back to the default English locale if missing (backward compat).
+  return bootstrap.locale ?? defaultLocale;
 }

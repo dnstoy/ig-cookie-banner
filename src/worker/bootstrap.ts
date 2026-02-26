@@ -6,7 +6,7 @@ import type {
 import type { GeoInfo } from "./geo.js";
 import { resolveConsentModel } from "./geo.js";
 import type { CookieReadResult } from "./cookie.js";
-import type { LocaleStrings } from "../config/locale.js";
+import type { LocaleResult } from "./locale.js";
 
 /**
  * Builds the bootstrap JSON payload that gets injected into the page.
@@ -17,7 +17,7 @@ export function buildBootstrapPayload(
   geo: GeoInfo,
   gpcState: GpcState,
   cookieResult: CookieReadResult,
-  _locale: LocaleStrings,
+  localeResult: LocaleResult,
 ): string {
   const consentModel = resolveConsentModel(geo, config);
 
@@ -30,6 +30,8 @@ export function buildBootstrapPayload(
       region: geo.region,
     },
     config,
+    locale: localeResult.locale,
+    localeCode: localeResult.localeCode,
   };
 
   return JSON.stringify(payload);

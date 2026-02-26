@@ -9,7 +9,7 @@ import {
   purgeExpiredRecords,
 } from "./consent-api.js";
 import BANNER_JS from "./banner-js.js";
-import { defaultLocale } from "../config/default-locale.js";
+import { resolveLocale } from "./locale.js";
 import type { BannerConfig, GpcState } from "../types/index.js";
 import type { GeoInfo } from "./geo.js";
 
@@ -53,20 +53,18 @@ export default {
       return handleConsentGet(consentId, env);
     }
 
-    // Load config and locale (Phase 1 — will be refactored in Phase 2)
+    // Load config, resolve geo, GPC, locale, cookie state
     const config = getConfig();
-    const locale = defaultLocale;
-
-    // Resolve geo, GPC, cookie state
     const geo = resolveGeo(request, url, config, isDev);
     const gpcState = detectGpc(request, url, config, geo, isDev);
+    const localeResult = resolveLocale(url, geo, isDev);
     const cookieResult = readConsentCookie(request, config);
     const bootstrapJson = buildBootstrapPayload(
       config,
       geo,
       gpcState,
       cookieResult,
-      locale,
+      localeResult,
     );
 
     // Phase 1: Build the full HTML response with injected bootstrap
@@ -76,6 +74,7 @@ export default {
       isDev,
       geo,
       gpcState,
+      localeResult.localeCode,
     );
 
     return new Response(html, {
@@ -163,6 +162,7 @@ function injectBootstrap(
   isDev: boolean,
   geo: GeoInfo,
   gpcState: GpcState,
+  localeCode: string,
 ): string {
   const bootstrapTag = `<script id="ig-consent-bootstrap" type="application/json">${bootstrapJson}</script>`;
   const bannerTag = `<script src="/ig-consent-banner.js"></script>`;
@@ -174,7 +174,7 @@ function injectBootstrap(
       ? `${geo.country}-${geo.region}`
       : geo.country;
     const gpcDisplay = gpcState === "detected" ? "on" : "off";
-    devOverlay = `<div id="dev-overlay">DEV: geo=${geoDisplay}, gpc=${gpcDisplay}, model=${parsed.consentModel}</div>`;
+    devOverlay = `<div id="dev-overlay">DEV: geo=${geoDisplay}, gpc=${gpcDisplay}, model=${parsed.consentModel}, lang=${localeCode}</div>`;
   }
 
   return html

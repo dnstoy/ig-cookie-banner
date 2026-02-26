@@ -33,13 +33,14 @@ describe("Full request flow", () => {
   });
 
   describe("Dev overlay", () => {
-    it("should show dev overlay with geo and consent model info", async () => {
+    it("should show dev overlay with geo, consent model, and locale info", async () => {
       const response = await SELF.fetch("https://example.com/?_geo=DE");
       const html = await response.text();
       expect(html).toContain('id="dev-overlay"');
       expect(html).toContain("geo=DE");
       expect(html).toContain("model=opt-in");
       expect(html).toContain("gpc=off");
+      expect(html).toContain("lang=de");
     });
 
     it("should show GPC on in dev overlay when GPC is detected", async () => {
@@ -105,6 +106,8 @@ describe("Full request flow", () => {
       expect(payload).toHaveProperty("gpcState", "not-detected");
       expect(payload).toHaveProperty("geo");
       expect(payload).toHaveProperty("config");
+      expect(payload).toHaveProperty("locale");
+      expect(payload).toHaveProperty("localeCode");
 
       const geo = payload.geo as Record<string, unknown>;
       expect(geo).toHaveProperty("country", "DE");

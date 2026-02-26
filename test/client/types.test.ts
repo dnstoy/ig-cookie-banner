@@ -190,10 +190,28 @@ describe("Core TypeScript types", () => {
             persistentAccessStyle: "floating-icon",
           },
         },
+        locale: {
+          banner: {
+            optIn: { description: "Cookies.", acceptAll: "Accept", rejectAll: "Reject", managePreferences: "Manage" },
+            optOut: { description: "Data.", doNotSell: "DNT", ok: "OK", gpcHonored: "GPC." },
+            noticeOnly: { description: "Cookies.", ok: "OK", learnMore: "Learn" },
+          },
+          modal: {
+            optIn: { title: "Prefs", acceptAll: "Accept", rejectAll: "Reject", savePreferences: "Save", necessaryExplanation: "Essential." },
+            optOut: { title: "Privacy", saleDescription: "Sale.", saleToggle: "Opt out", advertisingToggle: "Ads", save: "Save", gpcNote: "GPC.", dataCollectedTitle: "Data", thirdPartiesTitle: "Third parties" },
+          },
+          categories: {
+            necessary: { name: "Necessary", description: "Essential." },
+          },
+          common: { privacyPolicy: "Privacy", poweredBy: "Consent", alwaysOn: "Always on", cookiePreferences: "Cookie preferences" },
+        },
+        localeCode: "en",
       };
       expect(payload.consentModel).toBe("opt-in");
       expect(payload.config.categories).toHaveLength(1);
       expect(payload.geo.country).toBe("DE");
+      expect(payload.localeCode).toBe("en");
+      expect(payload.locale.banner.optIn.acceptAll).toBe("Accept");
     });
 
     it("should accept geo with region", () => {

@@ -49,6 +49,24 @@ function makeBootstrap(
     gpcState: "not-detected",
     geo: { country: "DE" },
     config: makeConfig(),
+    locale: {
+      banner: {
+        optIn: { description: "Cookies.", acceptAll: "Accept", rejectAll: "Reject", managePreferences: "Manage" },
+        optOut: { description: "Data.", doNotSell: "DNT", ok: "OK", gpcHonored: "GPC." },
+        noticeOnly: { description: "Cookies.", ok: "OK", learnMore: "Learn" },
+      },
+      modal: {
+        optIn: { title: "Prefs", acceptAll: "Accept", rejectAll: "Reject", savePreferences: "Save", necessaryExplanation: "Essential." },
+        optOut: { title: "Privacy", saleDescription: "Sale.", saleToggle: "Opt out", advertisingToggle: "Ads", save: "Save", gpcNote: "GPC.", dataCollectedTitle: "Data", thirdPartiesTitle: "Third parties" },
+      },
+      categories: {
+        necessary: { name: "Necessary", description: "Essential." },
+        analytics: { name: "Analytics", description: "Stats." },
+        marketing: { name: "Marketing", description: "Ads." },
+      },
+      common: { privacyPolicy: "Privacy", poweredBy: "Consent", alwaysOn: "Always on", cookiePreferences: "Cookie preferences" },
+    },
+    localeCode: "en",
     ...overrides,
   };
 }

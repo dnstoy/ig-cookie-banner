@@ -141,6 +141,15 @@ export interface BannerConfig {
   readonly optOut?: OptOutConfig;
 }
 
+// ── Locale Payload (subset sent to client) ──────────────────────────
+
+/**
+ * Re-export for convenience — the full LocaleStrings type lives in
+ * src/config/locale.ts, but we reference it here so the bootstrap
+ * contract is self-contained.
+ */
+export type { LocaleStrings } from "../config/locale.js";
+
 // ── Bootstrap Payload ───────────────────────────────────────────────
 
 /**
@@ -159,4 +168,8 @@ export interface BootstrapPayload {
     readonly region?: string;
   };
   readonly config: BannerConfig;
+  /** Fully resolved locale strings for the current visitor */
+  readonly locale: import("../config/locale.js").LocaleStrings;
+  /** ISO locale code (e.g. "en", "de", "fr") */
+  readonly localeCode: string;
 }
