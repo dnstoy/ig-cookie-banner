@@ -174,8 +174,8 @@ export class BannerUI {
             <div class="ig-banner-desc">${esc(strings.description)}</div>
           </div>
           <div class="ig-banner-actions">
-            <button class="ig-btn ig-btn-ghost" data-action="do-not-sell">${esc(strings.doNotSell)}</button>
             <button class="ig-btn ig-btn-primary" data-action="ok">${esc(strings.ok)}</button>
+            <button class="ig-btn ig-btn-ghost" data-action="do-not-sell">${esc(strings.doNotSell)}</button>
           </div>
         </div>
       `;

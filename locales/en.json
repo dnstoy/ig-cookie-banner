@@ -1,7 +1,7 @@
 {
   "banner": {
     "optIn": {
-      "description": "We use cookies and similar technologies to help personalize content, tailor and measure ads, and provide a better experience. By clicking \"Accept all\", you agree to this as outlined in our Cookie Policy. You can manage your preferences at any time.",
+      "description": "We use cookies and similar technologies to help personalize content, tailor and measure ads, and provide a better experience. By clicking \"Accept all\", you agree to this as outlined in our Cookie Policy.",
       "acceptAll": "Accept all",
       "rejectAll": "Reject all",
       "managePreferences": "Manage preferences"

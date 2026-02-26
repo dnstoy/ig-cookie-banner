@@ -82,10 +82,16 @@ export const bannerStyles = `
     opacity: 0.8;
   }
 
+  @media (min-width: 860px) {
+    .ig-banner-desc {
+      font-size: 12px;
+    }
+  }
+
   .ig-banner-actions {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 12px;
     flex-shrink: 0;
   }
 
@@ -98,6 +104,7 @@ export const bannerStyles = `
   .ig-banner-actions .ig-btn-ghost {
     flex-basis: 100%;
     text-align: center;
+    white-space: normal;
   }
 
   @media (min-width: 860px) {
@@ -136,6 +143,12 @@ export const bannerStyles = `
     white-space: nowrap;
     transition: background 0.15s, opacity 0.15s;
     letter-spacing: 0.01em;
+  }
+
+  @media (max-width: 859px) {
+    .ig-banner-actions .ig-btn {
+      padding: 8px 14px;
+    }
   }
 
   .ig-btn:hover {
