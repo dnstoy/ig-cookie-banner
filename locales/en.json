@@ -1,0 +1,64 @@
+{
+  "banner": {
+    "optIn": {
+      "description": "We use cookies and similar technologies to help personalize content, tailor and measure ads, and provide a better experience. By clicking \"Accept all\", you agree to this as outlined in our Cookie Policy. You can manage your preferences at any time.",
+      "acceptAll": "Accept all",
+      "rejectAll": "Reject all",
+      "managePreferences": "Manage preferences"
+    },
+    "optOut": {
+      "description": "We and our partners use cookies and similar technologies to collect information about your browsing activity to provide you with a better experience. You may opt out at any time.",
+      "doNotSell": "Do Not Sell or Share My Personal Information",
+      "ok": "Got it",
+      "gpcHonored": "We've detected your Global Privacy Control signal and have honored your opt-out preference."
+    },
+    "noticeOnly": {
+      "description": "We use cookies and similar technologies to improve your experience on our site, analyze traffic, and personalize content.",
+      "ok": "Got it",
+      "learnMore": "Learn more"
+    }
+  },
+  "modal": {
+    "optIn": {
+      "title": "Manage cookie preferences",
+      "acceptAll": "Accept all",
+      "rejectAll": "Reject all",
+      "savePreferences": "Save my choices",
+      "necessaryExplanation": "These cookies are essential for the site to function properly. They are always active and cannot be turned off."
+    },
+    "optOut": {
+      "title": "Your privacy choices",
+      "saleDescription": "Under applicable privacy laws, we may sell or share your personal information with third parties, including for targeted advertising. You have the right to opt out of this at any time using the controls below.",
+      "saleToggle": "Opt out of sale and sharing of personal information",
+      "advertisingToggle": "Opt out of targeted advertising",
+      "save": "Save my choices",
+      "gpcNote": "We detected a Global Privacy Control signal from your browser. Your opt-out preferences have been applied automatically.",
+      "dataCollectedTitle": "Categories of information we collect",
+      "thirdPartiesTitle": "Categories of third parties we share with"
+    }
+  },
+  "categories": {
+    "necessary": {
+      "name": "Strictly necessary",
+      "description": "These cookies are required for the site to work and can't be switched off. They are usually set in response to actions you take, such as setting your privacy preferences, logging in, or filling in forms."
+    },
+    "analytics": {
+      "name": "Performance & analytics",
+      "description": "These cookies help us understand how visitors interact with our site by collecting and reporting information anonymously. This helps us improve the way our site works."
+    },
+    "marketing": {
+      "name": "Targeting & advertising",
+      "description": "These cookies may be set by our advertising partners to build a profile of your interests and show you relevant ads on other sites. They work by uniquely identifying your browser and device."
+    },
+    "functional": {
+      "name": "Functional",
+      "description": "These cookies enable enhanced functionality and personalization, such as live chat, videos, and remembering your preferences. They may be set by us or by third-party providers whose services we've added to our pages."
+    }
+  },
+  "common": {
+    "privacyPolicy": "Privacy policy",
+    "poweredBy": "Cookie consent by {{organization.name}}",
+    "alwaysOn": "Always on",
+    "cookiePreferences": "Cookie preferences"
+  }
+}

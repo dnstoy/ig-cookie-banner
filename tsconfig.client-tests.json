@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.client.json",
+  "compilerOptions": {
+    "composite": false,
+    "declaration": false,
+    "declarationMap": false,
+    "noEmit": true
+  },
+  "include": ["src/client/**/*.ts", "src/types/**/*.ts", "src/config/**/*.ts", "test/client/**/*.ts"]
+}

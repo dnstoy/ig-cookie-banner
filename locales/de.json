@@ -1,0 +1,64 @@
+{
+  "banner": {
+    "optIn": {
+      "description": "Wir verwenden Cookies und ähnliche Technologien, um Inhalte zu personalisieren, Werbung anzupassen und zu messen sowie Ihr Erlebnis zu verbessern. Mit Klick auf \"Alle akzeptieren\" stimmen Sie dem zu, wie in unserer Cookie-Richtlinie beschrieben. Sie können Ihre Einstellungen jederzeit ändern.",
+      "acceptAll": "Alle akzeptieren",
+      "rejectAll": "Alle ablehnen",
+      "managePreferences": "Einstellungen verwalten"
+    },
+    "optOut": {
+      "description": "Wir und unsere Partner verwenden Cookies und ähnliche Technologien, um Informationen über Ihre Browsing-Aktivitäten zu sammeln und Ihnen ein besseres Erlebnis zu bieten. Sie können sich jederzeit abmelden.",
+      "doNotSell": "Meine persönlichen Daten nicht verkaufen oder weitergeben",
+      "ok": "Verstanden",
+      "gpcHonored": "Wir haben Ihr Global Privacy Control-Signal erkannt und Ihre Abmeldepräferenz berücksichtigt."
+    },
+    "noticeOnly": {
+      "description": "Wir verwenden Cookies und ähnliche Technologien, um Ihr Erlebnis auf unserer Website zu verbessern, den Datenverkehr zu analysieren und Inhalte zu personalisieren.",
+      "ok": "Verstanden",
+      "learnMore": "Mehr erfahren"
+    }
+  },
+  "modal": {
+    "optIn": {
+      "title": "Cookie-Einstellungen verwalten",
+      "acceptAll": "Alle akzeptieren",
+      "rejectAll": "Alle ablehnen",
+      "savePreferences": "Meine Auswahl speichern",
+      "necessaryExplanation": "Diese Cookies sind für das ordnungsgemäße Funktionieren der Website unerlässlich. Sie sind immer aktiv und können nicht deaktiviert werden."
+    },
+    "optOut": {
+      "title": "Ihre Datenschutzoptionen",
+      "saleDescription": "Nach geltendem Datenschutzrecht dürfen wir Ihre persönlichen Daten an Dritte verkaufen oder weitergeben, auch für gezielte Werbung. Sie haben das Recht, sich jederzeit über die unten stehenden Optionen abzumelden.",
+      "saleToggle": "Verkauf und Weitergabe meiner persönlichen Daten ablehnen",
+      "advertisingToggle": "Gezielte Werbung ablehnen",
+      "save": "Meine Auswahl speichern",
+      "gpcNote": "Wir haben ein Global Privacy Control-Signal von Ihrem Browser erkannt. Ihre Abmeldepräferenzen wurden automatisch angewendet.",
+      "dataCollectedTitle": "Kategorien der von uns erfassten Daten",
+      "thirdPartiesTitle": "Kategorien von Dritten, mit denen wir teilen"
+    }
+  },
+  "categories": {
+    "necessary": {
+      "name": "Unbedingt erforderlich",
+      "description": "Diese Cookies sind für das Funktionieren der Website erforderlich und können nicht deaktiviert werden. Sie werden in der Regel als Reaktion auf Ihre Aktionen gesetzt, z. B. beim Festlegen Ihrer Datenschutzeinstellungen, beim Anmelden oder beim Ausfüllen von Formularen."
+    },
+    "analytics": {
+      "name": "Leistung und Analyse",
+      "description": "Diese Cookies helfen uns zu verstehen, wie Besucher mit unserer Website interagieren, indem sie Informationen anonym sammeln und auswerten. Das hilft uns, die Funktionsweise der Website zu verbessern."
+    },
+    "marketing": {
+      "name": "Targeting und Werbung",
+      "description": "Diese Cookies können von unseren Werbepartnern gesetzt werden, um ein Profil Ihrer Interessen zu erstellen und Ihnen relevante Werbung auf anderen Websites anzuzeigen. Sie funktionieren, indem sie Ihren Browser und Ihr Gerät eindeutig identifizieren."
+    },
+    "functional": {
+      "name": "Funktional",
+      "description": "Diese Cookies ermöglichen erweiterte Funktionen und Personalisierung, wie Live-Chat, Videos und das Speichern Ihrer Einstellungen. Sie können von uns oder von Drittanbietern gesetzt werden, deren Dienste wir in unsere Seiten integriert haben."
+    }
+  },
+  "common": {
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "poweredBy": "Cookie-Einwilligung von {{organization.name}}",
+    "alwaysOn": "Immer aktiv",
+    "cookiePreferences": "Cookie-Einstellungen"
+  }
+}

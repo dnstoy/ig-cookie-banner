@@ -1,0 +1,64 @@
+{
+  "banner": {
+    "optIn": {
+      "description": "Utilizziamo cookie e tecnologie simili per personalizzare i contenuti, adattare e misurare gli annunci e migliorare la tua esperienza. Cliccando su \"Accetta tutto\", accetti quanto descritto nella nostra Informativa sui cookie. Puoi gestire le tue preferenze in qualsiasi momento.",
+      "acceptAll": "Accetta tutto",
+      "rejectAll": "Rifiuta tutto",
+      "managePreferences": "Gestisci preferenze"
+    },
+    "optOut": {
+      "description": "Noi e i nostri partner utilizziamo cookie e tecnologie simili per raccogliere informazioni sulla tua attività di navigazione e offrirti un'esperienza migliore. Puoi disattivare questa opzione in qualsiasi momento.",
+      "doNotSell": "Non vendere né condividere le mie informazioni personali",
+      "ok": "Ho capito",
+      "gpcHonored": "Abbiamo rilevato il tuo segnale Global Privacy Control e abbiamo rispettato la tua preferenza di esclusione."
+    },
+    "noticeOnly": {
+      "description": "Utilizziamo cookie e tecnologie simili per migliorare la tua esperienza sul nostro sito, analizzare il traffico e personalizzare i contenuti.",
+      "ok": "Ho capito",
+      "learnMore": "Scopri di più"
+    }
+  },
+  "modal": {
+    "optIn": {
+      "title": "Gestisci le preferenze dei cookie",
+      "acceptAll": "Accetta tutto",
+      "rejectAll": "Rifiuta tutto",
+      "savePreferences": "Salva le mie scelte",
+      "necessaryExplanation": "Questi cookie sono essenziali per il corretto funzionamento del sito. Sono sempre attivi e non possono essere disattivati."
+    },
+    "optOut": {
+      "title": "Le tue scelte sulla privacy",
+      "saleDescription": "In base alle leggi sulla privacy applicabili, possiamo vendere o condividere le tue informazioni personali con terzi, anche per pubblicità mirata. Hai il diritto di disattivare questa opzione in qualsiasi momento utilizzando i controlli qui sotto.",
+      "saleToggle": "Rifiuta la vendita e la condivisione delle informazioni personali",
+      "advertisingToggle": "Rifiuta la pubblicità mirata",
+      "save": "Salva le mie scelte",
+      "gpcNote": "Abbiamo rilevato un segnale Global Privacy Control dal tuo browser. Le tue preferenze di esclusione sono state applicate automaticamente.",
+      "dataCollectedTitle": "Categorie di informazioni che raccogliamo",
+      "thirdPartiesTitle": "Categorie di terzi con cui condividiamo"
+    }
+  },
+  "categories": {
+    "necessary": {
+      "name": "Strettamente necessari",
+      "description": "Questi cookie sono necessari per il funzionamento del sito e non possono essere disattivati. Vengono generalmente impostati in risposta alle tue azioni, come la configurazione delle preferenze sulla privacy, l'accesso o la compilazione di moduli."
+    },
+    "analytics": {
+      "name": "Prestazioni e analisi",
+      "description": "Questi cookie ci aiutano a capire come i visitatori interagiscono con il nostro sito, raccogliendo e riportando informazioni in modo anonimo. Questo ci aiuta a migliorare il funzionamento del sito."
+    },
+    "marketing": {
+      "name": "Targeting e pubblicità",
+      "description": "Questi cookie possono essere impostati dai nostri partner pubblicitari per creare un profilo dei tuoi interessi e mostrarti annunci pertinenti su altri siti. Funzionano identificando in modo univoco il tuo browser e il tuo dispositivo."
+    },
+    "functional": {
+      "name": "Funzionali",
+      "description": "Questi cookie abilitano funzionalità avanzate e personalizzazione, come chat dal vivo, video e la memorizzazione delle tue preferenze. Possono essere impostati da noi o da fornitori terzi i cui servizi abbiamo aggiunto alle nostre pagine."
+    }
+  },
+  "common": {
+    "privacyPolicy": "Informativa sulla privacy",
+    "poweredBy": "Consenso ai cookie di {{organization.name}}",
+    "alwaysOn": "Sempre attivo",
+    "cookiePreferences": "Preferenze dei cookie"
+  }
+}

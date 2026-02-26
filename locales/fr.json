@@ -1,0 +1,64 @@
+{
+  "banner": {
+    "optIn": {
+      "description": "Nous utilisons des cookies et des technologies similaires pour personnaliser le contenu, adapter et mesurer les publicités, et améliorer votre expérience. En cliquant sur « Tout accepter », vous acceptez cette utilisation conformément à notre Politique de cookies. Vous pouvez gérer vos préférences à tout moment.",
+      "acceptAll": "Tout accepter",
+      "rejectAll": "Tout refuser",
+      "managePreferences": "Gérer les préférences"
+    },
+    "optOut": {
+      "description": "Nous et nos partenaires utilisons des cookies et des technologies similaires pour collecter des informations sur votre navigation afin de vous offrir une meilleure expérience. Vous pouvez vous désinscrire à tout moment.",
+      "doNotSell": "Ne pas vendre ni partager mes informations personnelles",
+      "ok": "Compris",
+      "gpcHonored": "Nous avons détecté votre signal Global Privacy Control et avons respecté votre choix de désinscription."
+    },
+    "noticeOnly": {
+      "description": "Nous utilisons des cookies et des technologies similaires pour améliorer votre expérience sur notre site, analyser le trafic et personnaliser le contenu.",
+      "ok": "Compris",
+      "learnMore": "En savoir plus"
+    }
+  },
+  "modal": {
+    "optIn": {
+      "title": "Gérer les préférences de cookies",
+      "acceptAll": "Tout accepter",
+      "rejectAll": "Tout refuser",
+      "savePreferences": "Enregistrer mes choix",
+      "necessaryExplanation": "Ces cookies sont indispensables au bon fonctionnement du site. Ils sont toujours actifs et ne peuvent pas être désactivés."
+    },
+    "optOut": {
+      "title": "Vos choix de confidentialité",
+      "saleDescription": "En vertu des lois applicables sur la confidentialité, nous pouvons vendre ou partager vos informations personnelles avec des tiers, y compris à des fins publicitaires ciblées. Vous avez le droit de vous désinscrire à tout moment à l'aide des options ci-dessous.",
+      "saleToggle": "Refuser la vente et le partage de mes informations personnelles",
+      "advertisingToggle": "Refuser la publicité ciblée",
+      "save": "Enregistrer mes choix",
+      "gpcNote": "Nous avons détecté un signal Global Privacy Control de votre navigateur. Vos préférences de désinscription ont été appliquées automatiquement.",
+      "dataCollectedTitle": "Catégories d'informations que nous collectons",
+      "thirdPartiesTitle": "Catégories de tiers avec lesquels nous partageons"
+    }
+  },
+  "categories": {
+    "necessary": {
+      "name": "Strictement nécessaires",
+      "description": "Ces cookies sont indispensables au fonctionnement du site et ne peuvent pas être désactivés. Ils sont généralement activés en réponse à vos actions, comme la définition de vos préférences de confidentialité, la connexion ou le remplissage de formulaires."
+    },
+    "analytics": {
+      "name": "Performance et analyse",
+      "description": "Ces cookies nous aident à comprendre comment les visiteurs interagissent avec notre site en collectant et en rapportant des informations de manière anonyme. Cela nous aide à améliorer le fonctionnement du site."
+    },
+    "marketing": {
+      "name": "Ciblage et publicité",
+      "description": "Ces cookies peuvent être déposés par nos partenaires publicitaires pour créer un profil de vos centres d'intérêt et vous montrer des publicités pertinentes sur d'autres sites. Ils fonctionnent en identifiant de manière unique votre navigateur et votre appareil."
+    },
+    "functional": {
+      "name": "Fonctionnels",
+      "description": "Ces cookies permettent des fonctionnalités avancées et la personnalisation, comme le chat en direct, les vidéos et la mémorisation de vos préférences. Ils peuvent être déposés par nous ou par des fournisseurs tiers dont nous avons intégré les services."
+    }
+  },
+  "common": {
+    "privacyPolicy": "Politique de confidentialité",
+    "poweredBy": "Consentement aux cookies par {{organization.name}}",
+    "alwaysOn": "Toujours actif",
+    "cookiePreferences": "Préférences de cookies"
+  }
+}

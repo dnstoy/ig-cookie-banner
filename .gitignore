@@ -1,7 +1,10 @@
 node_modules/
 dist/
+src/worker/banner-js.ts
+.wrangler/
 .env
 .env.*
 !.env.example
+.dev.vars
 .DS_Store
 *.log

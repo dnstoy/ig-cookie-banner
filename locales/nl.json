@@ -1,0 +1,64 @@
+{
+  "banner": {
+    "optIn": {
+      "description": "Wij gebruiken cookies en vergelijkbare technologieën om content te personaliseren, advertenties aan te passen en te meten, en je ervaring te verbeteren. Door op \"Alles accepteren\" te klikken, ga je hiermee akkoord zoals beschreven in ons Cookiebeleid. Je kunt je voorkeuren op elk moment beheren.",
+      "acceptAll": "Alles accepteren",
+      "rejectAll": "Alles weigeren",
+      "managePreferences": "Voorkeuren beheren"
+    },
+    "optOut": {
+      "description": "Wij en onze partners gebruiken cookies en vergelijkbare technologieën om informatie over je surfgedrag te verzamelen en je een betere ervaring te bieden. Je kunt je op elk moment afmelden.",
+      "doNotSell": "Mijn persoonlijke gegevens niet verkopen of delen",
+      "ok": "Begrepen",
+      "gpcHonored": "We hebben je Global Privacy Control-signaal gedetecteerd en je afmeldingsvoorkeur gerespecteerd."
+    },
+    "noticeOnly": {
+      "description": "Wij gebruiken cookies en vergelijkbare technologieën om je ervaring op onze site te verbeteren, verkeer te analyseren en content te personaliseren.",
+      "ok": "Begrepen",
+      "learnMore": "Meer informatie"
+    }
+  },
+  "modal": {
+    "optIn": {
+      "title": "Cookievoorkeuren beheren",
+      "acceptAll": "Alles accepteren",
+      "rejectAll": "Alles weigeren",
+      "savePreferences": "Mijn keuzes opslaan",
+      "necessaryExplanation": "Deze cookies zijn essentieel voor het goed functioneren van de website. Ze zijn altijd actief en kunnen niet worden uitgeschakeld."
+    },
+    "optOut": {
+      "title": "Je privacykeuzes",
+      "saleDescription": "Op grond van toepasselijke privacywetten mogen wij je persoonlijke gegevens verkopen of delen met derden, waaronder voor gerichte advertenties. Je hebt het recht om je op elk moment af te melden via de onderstaande opties.",
+      "saleToggle": "Verkoop en delen van persoonlijke gegevens weigeren",
+      "advertisingToggle": "Gerichte advertenties weigeren",
+      "save": "Mijn keuzes opslaan",
+      "gpcNote": "We hebben een Global Privacy Control-signaal van je browser gedetecteerd. Je afmeldingsvoorkeuren zijn automatisch toegepast.",
+      "dataCollectedTitle": "Categorieën informatie die we verzamelen",
+      "thirdPartiesTitle": "Categorieën derden waarmee we delen"
+    }
+  },
+  "categories": {
+    "necessary": {
+      "name": "Strikt noodzakelijk",
+      "description": "Deze cookies zijn nodig om de site te laten werken en kunnen niet worden uitgeschakeld. Ze worden meestal ingesteld als reactie op jouw acties, zoals het instellen van je privacyvoorkeuren, inloggen of het invullen van formulieren."
+    },
+    "analytics": {
+      "name": "Prestaties en analyse",
+      "description": "Deze cookies helpen ons te begrijpen hoe bezoekers met onze site omgaan door anoniem informatie te verzamelen en te rapporteren. Dit helpt ons de werking van de site te verbeteren."
+    },
+    "marketing": {
+      "name": "Targeting en advertenties",
+      "description": "Deze cookies kunnen worden geplaatst door onze advertentiepartners om een profiel van je interesses op te bouwen en je relevante advertenties op andere sites te tonen. Ze werken door je browser en apparaat uniek te identificeren."
+    },
+    "functional": {
+      "name": "Functioneel",
+      "description": "Deze cookies maken geavanceerde functionaliteit en personalisatie mogelijk, zoals livechat, video's en het onthouden van je voorkeuren. Ze kunnen door ons of door externe dienstverleners worden geplaatst wiens diensten we aan onze pagina's hebben toegevoegd."
+    }
+  },
+  "common": {
+    "privacyPolicy": "Privacybeleid",
+    "poweredBy": "Cookietoestemming door {{organization.name}}",
+    "alwaysOn": "Altijd actief",
+    "cookiePreferences": "Cookievoorkeuren"
+  }
+}

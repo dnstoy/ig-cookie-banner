@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.worker.json",
+  "compilerOptions": {
+    "composite": false,
+    "declaration": false,
+    "declarationMap": false,
+    "noEmit": true
+  },
+  "include": ["src/worker/**/*.ts", "src/types/**/*.ts", "src/config/**/*.ts", "test/worker/**/*.ts", "test/apply-migrations.ts"]
+}

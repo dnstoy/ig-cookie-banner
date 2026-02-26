@@ -1,0 +1,59 @@
+{
+  "version": "1.0.0",
+  "fallbackConsentModel": "opt-in",
+  "cookieDomain": "localhost",
+  "consentLifetimeDays": 365,
+  "categories": [
+    { "id": "necessary", "required": true, "defaultState": "granted" },
+    { "id": "analytics", "required": false, "defaultState": "denied" },
+    { "id": "marketing", "required": false, "defaultState": "denied" },
+    { "id": "functional", "required": false, "defaultState": "denied" }
+  ],
+  "regionModelMap": {
+    "DE": "opt-in",
+    "FR": "opt-in",
+    "GB": "opt-in",
+    "US": "opt-out",
+    "US-CA": "opt-out",
+    "AU": "notice-only",
+    "CA": "notice-only",
+    "CA-QC": "opt-in"
+  },
+  "googleConsentMode": {
+    "analytics": ["analytics_storage"],
+    "marketing": ["ad_storage", "ad_user_data", "ad_personalization"]
+  },
+  "organization": {
+    "name": "Example Company",
+    "privacyPolicyUrl": "https://example.com/privacy"
+  },
+  "optOut": {
+    "dataCategories": [
+      "Identifiers",
+      "Internet activity",
+      "Geolocation data"
+    ],
+    "thirdPartyCategories": [
+      "Analytics providers",
+      "Advertising networks"
+    ]
+  },
+  "gpc": {
+    "enabled": true,
+    "honorInRegions": ["US-CA", "US-CO", "US-CT", "US-MT", "US-OR", "US-TX", "US-VA"]
+  },
+  "locales": {
+    "defaultLocale": "en",
+    "supported": ["en"]
+  },
+  "ui": {
+    "theme": {
+      "accentColor": "#0066cc",
+      "backgroundColor": "#ffffff",
+      "textColor": "#1a1a1a",
+      "fontFamily": "system-ui, -apple-system, sans-serif",
+      "borderRadius": "8px"
+    },
+    "persistentAccessStyle": "floating-icon"
+  }
+}
