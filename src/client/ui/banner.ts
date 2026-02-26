@@ -91,11 +91,22 @@ export class BannerUI {
   }
 
   openModal(): void {
+    this.hideBanner();
     if (this.consentModel === "opt-out") {
       this.renderOptOutModal();
     } else {
       this.renderOptInModal();
     }
+  }
+
+  private hideBanner(): void {
+    if (this.bannerEl) this.bannerEl.classList.add("ig-banner-hidden");
+    if (this.overlayEl) this.overlayEl.classList.add("ig-banner-hidden");
+  }
+
+  private showBanner(): void {
+    if (this.bannerEl) this.bannerEl.classList.remove("ig-banner-hidden");
+    if (this.overlayEl) this.overlayEl.classList.remove("ig-banner-hidden");
   }
 
   private renderOptInBanner(): void {
@@ -407,6 +418,7 @@ export class BannerUI {
   private escHandler: ((e: KeyboardEvent) => void) | null = null;
 
   private closeModal(): void {
+    const hadModal = !!this.modalEl;
     if (this.modalEl) {
       this.modalEl.remove();
       this.modalEl = null;
@@ -415,6 +427,7 @@ export class BannerUI {
       document.removeEventListener("keydown", this.escHandler);
       this.escHandler = null;
     }
+    if (hadModal) this.showBanner();
   }
 
   private attachEscHandler(): void {

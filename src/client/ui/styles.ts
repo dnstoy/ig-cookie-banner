@@ -55,7 +55,11 @@ export const bannerStyles = `
     gap: 10px;
   }
 
-  @media (min-width: 768px) {
+  .ig-banner-hidden {
+    display: none !important;
+  }
+
+  @media (min-width: 860px) {
     .ig-banner {
       padding: 10px 24px;
     }
@@ -80,16 +84,37 @@ export const bannerStyles = `
 
   .ig-banner-actions {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 6px;
     flex-shrink: 0;
   }
 
-  @media (min-width: 768px) {
+  .ig-banner-actions .ig-btn-primary,
+  .ig-banner-actions .ig-btn-secondary {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .ig-banner-actions .ig-btn-ghost {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  @media (min-width: 860px) {
     .ig-banner-actions {
+      flex-wrap: nowrap;
       flex-direction: row;
       align-items: center;
       gap: 8px;
+    }
+
+    .ig-banner-actions .ig-btn-primary,
+    .ig-banner-actions .ig-btn-secondary {
+      flex: 0 0 auto;
+    }
+
+    .ig-banner-actions .ig-btn-ghost {
+      flex-basis: auto;
     }
   }
 
@@ -186,9 +211,25 @@ export const bannerStyles = `
     border: 1px solid rgba(0, 0, 0, 0.08);
   }
 
+  @media (max-height: 600px) {
+    .ig-modal {
+      max-height: 95vh;
+    }
+
+    .ig-modal-backdrop {
+      padding: 8px;
+    }
+  }
+
   .ig-modal-header {
     padding: 16px 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  @media (max-height: 600px) {
+    .ig-modal-header {
+      padding: 12px 16px;
+    }
   }
 
   .ig-modal-title {
@@ -197,11 +238,19 @@ export const bannerStyles = `
     letter-spacing: -0.01em;
   }
 
-
   .ig-modal-body {
     padding: 4px 20px 8px;
     overflow-y: auto;
     flex: 1;
+    min-height: 0;
+    mask-image: linear-gradient(to bottom, transparent 0, black 0, black calc(100% - 20px), transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, black 0, black calc(100% - 20px), transparent 100%);
+  }
+
+  @media (max-height: 600px) {
+    .ig-modal-body {
+      padding: 4px 16px 8px;
+    }
   }
 
   .ig-modal-footer {
@@ -212,13 +261,33 @@ export const bannerStyles = `
     gap: 8px;
   }
 
+  @media (max-height: 600px) {
+    .ig-modal-footer {
+      padding: 8px 16px 12px;
+    }
+  }
+
   .ig-modal-footer-buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
   }
 
   .ig-modal-footer-buttons .ig-btn {
-    flex: 1;
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .ig-modal-footer-buttons .ig-btn-primary {
+    flex-basis: 100%;
+    order: -1;
+  }
+
+  @media (min-width: 480px) {
+    .ig-modal-footer-buttons .ig-btn-primary {
+      flex-basis: 0;
+      order: 0;
+    }
   }
 
   .ig-modal-footer-meta {
